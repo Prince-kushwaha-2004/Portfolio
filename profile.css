@@ -1,0 +1,323 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(30deg,rgb(140, 239, 122) ,rgb(241, 167, 125),rgb(163, 93, 238),rgb(226, 237, 80),rgba(105, 204, 246, 0.816));
+}
+header {
+    background: linear-gradient(90deg, black , rgb(79, 196, 238) , black);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 2px 2px 20px black;
+    height: 5rem;
+    
+}
+hr{
+    padding: .1rem;
+}
+header h1{
+    margin: 1rem;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    background-color: rgba(7, 7, 7, 0.21);
+    height: 3rem;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.614);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    transition: all linear .5s;
+}
+.navbar a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.profile img {
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: solid #000000;
+    
+}
+
+.bio {
+    width: 600px;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    color: #552020;
+    text-align: center;
+    font-family: cursive;  
+    padding-left: 1rem;
+    text-decoration: double underline;
+    transition: all .2s;
+    letter-spacing: .2rem;
+}
+.heading{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+.program{
+    
+    height: 10rem;
+    border-radius: 50%;
+}
+#aboutme p {
+    margin: 3rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    text-align: center;
+    font-family: 'Calligraffitti', cursive;
+}
+
+
+
+.container{
+    text-align: center;
+   
+    color: white;
+    margin:1rem;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    background: linear-gradient(180deg, rgba(48, 101, 171, 0.366) 0%, rgba(48, 48, 208, 0.229) 35%, rgba(4, 22, 28, 0.432) 100%);
+    height: 28rem;
+    width: 18rem;
+    border-radius:1rem ;
+    margin: 1rem 5rem;
+    transition: all .2s;
+
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.card img{
+    height: 15rem;
+    width: 13rem;
+    margin: 1rem;
+    border-radius:1rem ;
+}
+.card h3{
+    font-size: 1rem;
+    line-height: normal;
+    font-size: 1.1rem;
+    padding: .5rem;
+}
+#contactme{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contect_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.contect_container input{
+    height: 2rem;
+    width: 20rem;
+    margin: .5rem;
+    padding: .2rem;
+    box-shadow: 2px 3px 10px 2px black;
+    border: 0;
+}
+.contect_container textarea{
+    box-shadow: 2px 3px 10px 2px black;
+    width: 70vw;
+    border: 0;
+}
+.button{
+    margin: 1rem;
+
+}
+button{
+    font-size: 1.2rem;
+    margin: 0rem .5rem;
+    padding:0.5rem 1.4rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    background-color: #8216e8;
+    color: white;
+    transition: all .5s;
+    
+}
+button:hover{
+    color: white;
+    background-color: black;
+    transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+span{
+    color:#832c2c;
+}
+span:hover{
+    color: green;
+}
+h2:hover{
+    transform: scale(1.02);
+    color: red;
+}
+li{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 2;
+    transition: all .2s;
+}
+li:hover{
+    transform: scale(1.02);
+    color: green;
+}
+.contact {
+    margin: 2em 0;
+}
+.icons{
+    font-size: 2.5rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5rem;
+}
+.icon{
+    padding: 1rem;
+    color: #000000;
+    transition: all .35s;
+    color: rgb(76, 1, 76);
+}
+.icon:hover{
+    transform: scale(1.2);   /* doubt here */
+    color: green;
+}
+
+footer {
+    background: linear-gradient(90deg, black , rgb(79, 196, 238) , black);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.space{
+    height: 6rem;
+}
+.menu{
+    position: absolute;
+    visibility: hidden;
+}
+.resnev img{
+    position: absolute;
+    visibility: hidden;
+}
+
+@media(max-width:600px){
+    .profile{
+        flex-direction: column;
+    
+    }
+    .bio{
+        width:20rem
+    }
+    .profile img{
+        height: 30rem;
+    }
+    .program{
+        height:10rem ;
+    }
+    header{
+        position: relative;
+        z-index: 2;
+    }
+    .navbar{
+        position: relative;
+        top: -70rem;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        background: linear-gradient( rgba(0, 0, 0, 0.601) , rgba(118, 118, 48, 0.804) , rgba(59, 89, 170, 0.733));
+        height:70vh;
+        justify-content: center;
+        align-items: center;
+        transition: all linear .7s;
+        z-index: -1;
+    }
+    .navbar a{
+        color: black;
+    }
+    .program{
+        display: none;
+    }
+    .resnev{
+        z-index: 1;
+        position: absolute;
+        right: 1px
+    }
+    .resnev img{
+        visibility: visible;
+        right: 1rem;
+        z-index: 5;
+        transition: all linear .2s;
+    }
+    .resnev img:hover{
+        transform: scale(1.3);
+        
+    }
+    .resnev img{
+        width: 1.5rem;
+        margin: .6rem;
+    }
+    #menu:checked ~ .navbar{
+        top:0rem;
+    }
+    .card{
+        height: auto;
+    }
+    .contect_container textarea{
+        width: 90vw;
+    }
+    
+}
